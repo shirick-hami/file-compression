@@ -51,3 +51,10 @@ cors:
   allowed-headers:
     - "*"
   allow-credentials: true
+
+# Async Configuration
+async:
+  core-pool-size: 4
+  max-pool-size: 8
+  queue-capacity: 100
+  thread-name-prefix: CompressionAsync-
