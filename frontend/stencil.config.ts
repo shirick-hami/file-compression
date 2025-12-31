@@ -21,7 +21,7 @@ export const config: Config = {
         {
             type: 'www',
             dir: 'www',                                    // Output directly to www/
-            baseUrl: !isProd ? '/file-compression/' : '/',
+            baseUrl: isProd ? '/file-compression/' : '/',
             serviceWorker: null,
             empty: true,                                   // Clean the folder before build
         },
