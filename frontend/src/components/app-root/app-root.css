@@ -1,0 +1,134 @@
+:host {
+    display: block;
+    min-height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.app-header {
+    text-align: center;
+    padding: var(--spacing-10) var(--spacing-4) var(--spacing-6);
+    color: var(--color-white);
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-4);
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4);
+}
+
+.logo-icon {
+    font-size: 3rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Main Content */
+.app-main {
+    flex: 1;
+    padding: 0 var(--spacing-4) var(--spacing-10);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-content {
+    animation: fadeIn var(--transition-normal) ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styles */
+.app-footer {
+    padding: var(--spacing-6) var(--spacing-4);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--font-size-sm);
+}
+
+.app-footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.app-footer a {
+    color: var(--color-white);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.app-footer a:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    opacity: 0.7;
+    font-size: var(--font-size-xs);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .app-header {
+        padding: var(--spacing-8) var(--spacing-4) var(--spacing-4);
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: var(--spacing-3);
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+
+    .logo-icon {
+        font-size: 2.5rem;
+    }
+}
