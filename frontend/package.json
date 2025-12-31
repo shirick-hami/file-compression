@@ -35,7 +35,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/example/huffman-compressor-ui"
+    "url": "https://github.com/shirick-hami/file-compression.git"
   },
   "keywords": [
     "huffman",
