@@ -297,7 +297,7 @@ public class HuffmanController {
     public ResponseEntity<?> healthCheck() {
         Map<String, Object> response = new HashMap<>();
         response.put("status", "UP");
-        response.put("service", "Huffman Compressor");
+        response.put("service", "File Compression Service");
         response.put("version", "1.0.0");
         return ResponseEntity.ok(response);
     }
