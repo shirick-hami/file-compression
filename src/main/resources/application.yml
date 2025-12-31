@@ -1,8 +1,12 @@
-# Application Configuration
-
+# Application Configuration and File Upload Configuration
 spring:
   application:
     name: file-compression
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
 
 server:
   port: 8081
