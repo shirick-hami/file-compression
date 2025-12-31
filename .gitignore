@@ -30,4 +30,9 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
+.idea/
 .vscode/
+/frontend/dist/
+/frontend/node_modules/
+/frontend/www/
+/frontend/.stencil/
