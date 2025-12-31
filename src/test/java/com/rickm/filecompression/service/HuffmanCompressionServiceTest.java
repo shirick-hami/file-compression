@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Comprehensive test suite for HuffmanCompressionService.
  */
 @DisplayName("HuffmanCompressionService Tests")
-class CompressionServiceTest {
+class HuffmanCompressionServiceTest {
 
     private HuffmanCompressionService compressionService;
 

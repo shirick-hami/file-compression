@@ -12,12 +12,12 @@ import java.util.concurrent.Executor;
  * Application configuration for async processing.
  */
 @Configuration
-public class AppConfig {
+public class AsyncConfig {
 
     private final AsyncProperties asyncProperties;
 
     @Autowired
-    public AppConfig(AsyncProperties asyncProperties) {
+    public AsyncConfig(AsyncProperties asyncProperties) {
         this.asyncProperties = asyncProperties;
     }
 
